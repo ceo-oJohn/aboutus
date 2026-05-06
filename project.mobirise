@@ -1,0 +1,1389 @@
+{
+  "settings": {
+    "name": "Site 2025-07-22 14:35",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "styling": {
+        "primaryColor": "#f80808",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#4caf50",
+        "mainFont": "Inter Tight",
+        "display1Font": "arsenica",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": "1",
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
+      },
+      "additionalSetColors": [
+        "#111e09",
+        "#4caf50",
+        "#b7ff3d",
+        "#f80808",
+        "#fde5e9",
+        "#ff0e0e"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.0.5",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      },
+      {
+        "css": "'Arsenal', sans-serif",
+        "name": "Arsenal",
+        "url": "https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i"
+      },
+      {
+        "css": "'arsenica'",
+        "name": "arsenica",
+        "url": null,
+        "file": "@PROJECT_PATH@/fonts/arsenica/font.zip"
+      }
+    ],
+    "multilingual": false,
+    "uniqCompNum": 83,
+    "versionPublish": "6.1.12",
+    "imageResize": true,
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/logo20-20ojohn20-20fundo20transparente-128x128.png",
+    "mbrsiteDomain": "coqw47a64r",
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "ojohn",
+        "meta_descr": "AboutUs",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "socialSharingUrl": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header12",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header12\" group=\"Headers\" mbr-class=\"{\n  'mbr-fullscreen': fullScreen,\n  'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n    <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"4\" max=\"12\" step=\"1\" value=\"4\" condition=\"showImage\">\n\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div class=\"text-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row mb-4 justify-content-center\" mbr-if=\"showImage\">\n      <div class=\"col-12 col-md-{{imageWidth}}\">\n        <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/ojohn2-578x211.png\" alt=\"Mobirise Website Builder\">\n      </div>\n    </div>\n    <div class=\"row justify-content-center\">\n      <div class=\"col-md-12 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n          <b>From ordinary to extraordinary</b>\n        </h1>\n        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n          Treinamento | Mentoria<br>Inteligência Artificial<br>Transformação Digital</p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n          <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Download now</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "viMwdIqP1S",
+          "_anchor": "header12-22",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-description": {
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-direction": "column",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem"
+              }
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#ffffff"
+            },
+            ".card-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-number": {
+              "color": "#232323"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".card-text, .item .mbr-section-btn": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "1rem"
+            },
+            ".image-wrapper": {
+              "margin-bottom": "0rem",
+              "padding": "0rem",
+              "@media (max-width: 767px)": {
+                "padding": "0rem 0rem",
+                "margin-bottom": "0rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 0rem",
+                "margin-bottom": "0rem"
+              }
+            },
+            ".image-wrapper img": {
+              "height": "100%",
+              "object-fit": "cover"
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".card-title": {
+              "text-align": "left"
+            },
+            ".item-content": {
+              "display": "flex",
+              "flex-direction": "column",
+              "height": "100%",
+              ".item-footer": {
+                "margin-top": "auto"
+              }
+            }
+          },
+          "_name": "features036",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features036\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<header>Card</header>\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\">\n\t\t<input type=\"checkbox\" title=\"Card Subtitle\" name=\"showCardSubtitle\" checked>\n\t\t<input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\">\n\t\t<input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#f80808\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" selected>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f80808\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\" mbr-if=\"showTitle || showText\">\n\t\t\t<div class=\"col-md-12 content-head mb-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style  mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>IA Playground</b></h1>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tHover over an item and click on 'Add Copy' to clone it. You can move added items.</p>\n\t\t\t</div>\n\t\t</div>\n\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t\n\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t<b>Treinamentos</b></h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Quer transformar o seu negócio?</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\"><i><b>Você já sentiu que o mundo está mudando rápido demais? <br></b></i><br><i><b>Que a Inteligência Artificial parece algo complexo, feito apenas para profissionais da tecnologia? </b></i><br><br>Para você empreendedor, profissional liberal ou prestador de serviços, criamos um caminho especial, não perca tempo!<br><br>Ajuste agora a rota do seu negócio nesta transição tecnológica.<br>\n<br>\n<br><br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"index.html#features036-1o\" class=\"btn item-btn btn-white-outline\" data-app-placeholder=\"Type Text\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\" align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-5\"><b>Mentoria e Consultoria</b></h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Pronto para dar o primeiro passo na sua jornada para a eficiência!</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\"><br><b>IA na Prática para o Seu Negócio: </b><br><br>- Instrutor/Mentor sempre presente<br>- Foco no negócio, não na tecnologia<br>- Mentoria contínua integrada<br>- Linguagem 100% acessível<br>- Jornada completa e progressiva<br>- Dinâmico e aplicado ao seu negócio.<br>\n<br><br><b>Fale conosco: ceo.ojohn@gmail.com</b><br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"page1.html#pricing03-1l\" class=\"btn item-btn btn-white-outline\" data-app-placeholder=\"Type Text\" target=\"_blank\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "uROiaxSfpE",
+          "_anchor": "features036-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".image-wrapper": {
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              }
+            },
+            ".text-wrapper": {
+              "@media (min-width: 992px)": {
+                "padding": "0 2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323"
+            }
+          },
+          "_name": "header01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"8\">\n\t\t<input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" selected>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#edefeb\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f80808\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-12 col-lg-{{imageWidth}} image-wrapper\">\n\t\t\t\t<img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/imagem20central20folder-1377x768.png\" alt=\"Mobirise Website Builder\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg col-md-12\">\n\t\t\t\t<div class=\"text-wrapper align-left\">\n\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Comece sua jornada hoje mesmo!</b></h1>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\tCreate awesome websites on your computer! No code &amp; free. Publish anywhere.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"index.html#pricing01-29\" data-app-placeholder=\"Type Text\">Saiba +</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "viMrNhGBvT",
+          "_anchor": "header01-21",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".item-head": {
+              "background": "@cardsHead",
+              "padding": "2.25rem",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".item-content": {
+              "padding": "2.25rem 2.25rem 0",
+              "background": "@cardsBg",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 1.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem"
+              }
+            },
+            ".item-wrapper": {
+              "border-radius": "2rem",
+              "overflow": "hidden",
+              "margin-bottom": "2rem",
+              "background": "@cardsBg",
+              "padding": "0rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-flow": "column nowrap",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                ".item-footer": {
+                  "padding": "0 1.5rem 3rem"
+                }
+              },
+              "@media (min-width: 1201px)": {
+                ".item-footer": {
+                  "padding": "0 2rem 3rem"
+                }
+              }
+            },
+            ".btn": {
+              "width": "-webkit-fill-available"
+            },
+            ".item:focus, span:focus": {
+              "outline": "none"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "auto !important",
+              "padding": "2rem 2rem 0",
+              "@media (max-width: 991px)": {
+                "padding": "0rem 2.25rem 2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".item-title": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".item-subtitle": {
+              "text-align": "left",
+              "color": "#000000"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            }
+          },
+          "_name": "pricing01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing1\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"6\">2</option>\n      <option value=\"4\">3</option>\n      <option value=\"3\" selected>4</option>\n    </select>\n    <header>Cards</header>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Subtitle\" checked>\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <input type=\"color\" name=\"cardsHead\" title=\"Head\" value=\"#ff0e0e\">\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#f80808\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f80808\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Escolha o plano</b></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"></h5>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\"> \n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>IA.Playgroud</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n              <b>R$328 p/ aluno</b></h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style \" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">- <b style>Treinamento Presencial</b> com suporte direto do instrutor<br><br>- Foco em <b style>resultados práticos</b> imediatos.&nbsp;- Exercícios práticos adaptados ao negócio do participante.<br>\n<br>- Carga Horária: 4 horas<br>\n<br>- Materiais online de apoio e- Certificado de participação.<br><br><b><i>Ideal para quem deseja o primeiro contato prático e imediato com ferramentas de IA.</i></b></p>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-white-outline\" data-app-placeholder=\"Type Text\">Faça sua inscrição!</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Essencial</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 198 p/ mês</b></h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style \" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">- Manutenção do aprendizado e <b>atualização constante</b>.\n<br><br>- Consulta individual e mensal (Sessão de 1h)\n<br><br>- Acesso à plataforma online, materiais de apoio e uma sessão em grupo ao vivo por mês.\n<br><br><b><i>Recomendado para manter-se atualizado com baixo investimento mensal.</i></b></p>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-white-outline\" data-app-placeholder=\"Type Text\">Assine</a></div>\n        </div>\n      </div>\n\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Pro.Business</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 328 p/ mês</b></h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style \" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">- Ponte entre o aprendizado em grupo e a mentoria individual personalizada.<br><br>- Consulta individual e Mensal (Sessão de 1h + 4h Mentoria)\n<br><br>- Tudo do plano Essencial mais 4 horas de mentoria individual por mês.\n<br><br><b><i>O melhor custo-benefício para quem precisa de acompanhamento individual constante.&nbsp;</i></b><br>\n            </p>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-white-outline\" data-app-placeholder=\"Type Text\">Assine</a></div>\n        </div>\n      </div>\n\n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Mentor.IA</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 890 p/ pacote de 10h</b></h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style \" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">- Acompanhamento aprofundado e personalizado para implementação de IA no negócio.<br>\n<br>10 horas mensais\n<br><br>Diagnóstico inicial, plano de 90 dias personalizado, revisão de fluxos e suporte prioritário.\n<br><br><b><i>Escolha definitiva para empresários que buscam transformação digital total e acelerada.</i></b></p>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href class=\"btn item-btn btn-white-outline\" data-app-placeholder=\"Type Text\">Contrate agora!</a></div>\n        </div>\n      </div>\n      \n    </div>\n  </div>\n</section>",
+          "_cid": "viMDjQJWVj",
+          "_anchor": "pricing01-29",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            ".image-wrapper": {
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              }
+            },
+            ".text-wrapper": {
+              "@media (min-width: 992px)": {
+                "padding": "0 2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#f80808\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-12 col-lg-{{imageWidth}} image-wrapper\">\n\t\t\t\t<img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/image-887x1125.png\" alt=\"Mobirise Website Builder\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg col-md-12\">\n\t\t\t\t<div class=\"text-wrapper align-left\">\n\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n\t\t\t\t\t\t<b>Combo AI.First</b></h1>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>- 01 Curso Presencial IA.Playground +&nbsp;</b><b>01 mês de Assinatura Pro.Business&nbsp;&nbsp;</b><br><br>\n<b>Investimento: R$ 528,00 + economia (19%)</b><br><br><br><b><i>Otimize seu aprendizado com menor custo benefício.</i></b></p>\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Compre agora!</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "viMOX6PSOV",
+          "_anchor": "header01-2a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "bottom": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".topbg": {
+              "position": "absolute",
+              "bottom": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "30%",
+              "background": "@topbg"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            ".media-content, .mbr-figure": {
+              "align-self": "center"
+            },
+            ".mbr-figure iframe": {
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            ".app-video-wrapper": {
+              "background": "transparent"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            }
+          },
+          "_name": "header07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header7\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <header>Background</header>\n    <input type=\"checkbox\" title=\"Decoration\" name=\"doubleBg\" checked>\n    <input type=\"color\" title=\"Color\" name=\"topbg\" value=\"#ffffff\" selected>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ff0e0e\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div class=\"topbg\" mbr-if=\"doubleBg\"></div>\n  <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-md-12 mb-5 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Conceitos Básicos</b></h1>\n        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n          INTELIGÊNCIA ARTIFICIAL</p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Get Started</a></div>\n      </div>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <div mbr-video class=\"mbr-figure col-12 col-md-{{videoWidth}}\">\n        <iframe src=\"https://ceo-ojohn.github.io/aboutus/Lia.mp4\" width=\"800\" height=\"600\"></iframe>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uRP0HuZWnw",
+          "_anchor": "header07-q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-description": {
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-direction": "column",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem"
+              }
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#f80808"
+            },
+            ".card-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-number": {
+              "color": "#232323"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            ".card-text, .item .mbr-section-btn": {
+              "text-align": "left",
+              "color": "#000000"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "1rem"
+            },
+            ".image-wrapper": {
+              "margin-bottom": "0rem",
+              "padding": "0rem",
+              "@media (max-width: 767px)": {
+                "padding": "0rem 0rem",
+                "margin-bottom": "0rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 0rem",
+                "margin-bottom": "0rem"
+              }
+            },
+            ".image-wrapper img": {
+              "height": "100%",
+              "object-fit": "cover"
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".card-title": {
+              "text-align": "left"
+            },
+            ".item-content": {
+              "display": "flex",
+              "flex-direction": "column",
+              "height": "100%",
+              ".item-footer": {
+                "margin-top": "auto"
+              }
+            }
+          },
+          "_name": "features036",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features036\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<header>Card</header>\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Card Subtitle\" name=\"showCardSubtitle\" checked>\n\t\t<input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\">\n\t\t<input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#f80808\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\" mbr-if=\"showTitle || showText\">\n\t\t\t<div class=\"col-md-12 content-head mb-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style  mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n\t\t\t\t\t<b>Serviços</b></h1>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n\t\t\t\t\tFale conosco: ceo.ojohn@gmail.com</b></p>\n\t\t\t</div>\n\t\t</div>\n\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t\n\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t<b>Treinamentos</b></h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Capacitação que Inspira: Feita para Você!</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\">Entendemos que pessoas como você são a nossa maior inspiração. Por isso, oferecemos treinamentos personalizados, desenvolvidos na medida exata para atender às suas necessidades e potencializar o seu desenvolvimento.\n<br>\n<br>Seja para aprimorar suas habilidades, aprender algo novo ou avançar em sua carreira, nossos programas são feitos para impulsionar o seu crescimento.\n<br>\n<br>Pronto para transformar sua jornada?\n<br>\n<br>Começando por:\n<br>Pocket Course Conceitos Básicos: IA  \n<br>e outros +\n<br>\n<br>[Presencial - Hibrido - Remoto]\n<br>- na sua empresa\n<br>- na sua comunidade (condomínios, clubes, associações)\n<br>\n<br>\n<br><br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"index.html#features036-1o\" class=\"btn item-btn btn-primary-outline\" data-app-placeholder=\"Type Text\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\" align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-5\"><b>Mentoria e Consultoria</b></h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Mentor de tecnologia estratégica sob demanda!</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\"><br>Conte sobre sua necessidade e encontraremos uma solução juntos para o seu negócio.\n<br>\n<br><b>Fale conosco: ceo.ojohn@gmail.com</b><br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"page1.html#pricing03-1l\" class=\"btn item-btn btn-primary-outline\" data-app-placeholder=\"Type Text\" target=\"_blank\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-5\"><b>super apps as a service</b></h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Aplicativos para o seu negócio</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\">Desenvolvimento ágil em plataformas de lnteligência artificial NoCode, para solução de necessidades específicas e especiais do seu negócio.</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"page1.html#pricing03-1l\" class=\"btn item-btn btn-primary-outline\" data-app-placeholder=\"Type Text\" target=\"_blank\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "features036-1z",
+          "_cid": "vh55Wh3Ww9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-description": {
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "padding": "2.25rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-direction": "column",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem"
+              }
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#000000"
+            },
+            ".card-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-number": {
+              "color": "#f80808"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center",
+              "color": "#000000"
+            },
+            ".card-text, .item .mbr-section-btn": {
+              "text-align": "left",
+              "color": "#000000"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "1rem"
+            },
+            ".image-wrapper": {
+              "margin-bottom": "0rem",
+              "padding": "0rem",
+              "@media (max-width: 767px)": {
+                "padding": "0rem 0rem",
+                "margin-bottom": "0rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 0rem",
+                "margin-bottom": "0rem"
+              }
+            },
+            ".image-wrapper img": {
+              "height": "100%",
+              "object-fit": "cover"
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".card-title": {
+              "text-align": "left"
+            },
+            ".item-content": {
+              "display": "flex",
+              "flex-direction": "column",
+              "height": "100%",
+              ".item-footer": {
+                "margin-top": "auto"
+              }
+            }
+          },
+          "_name": "features036",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features036\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<header>Card</header>\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Card Subtitle\" name=\"showCardSubtitle\" checked>\n\t\t<input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\">\n\t\t<input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\" mbr-if=\"showTitle || showText\">\n\t\t\t<div class=\"col-md-12 content-head mb-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style  mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n\t\t\t\t\t<b>Treinamentos</b></h1>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n\t\t\t\t\tFale conosco: ceo.ojohn@gmail.com</b></p>\n\t\t\t</div>\n\t\t</div>\n\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t\n\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-1\">\n\t\t\t\t\t\t\t<b>01.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\t<b>Pocket Courses - Conceitos Básicos</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\">Perfeito para <b>pequenos empreendedores e profissionais liberais</b>! Tenha a chance de explorar temas relevantes de inovação, trocar experiências e fortalecer seu networking com outros participantes.<br><br><b>Carga Horária: 2hs por cada tema</b><br><br><b>Temas\n</b><br><i>Inteligência Artificial - IA\n<br>Environmental, Social and Governance - ESG\n</i><br>\n<br><b>Modelos</b><br>in Community | in Company<br><br><a href=\"index.html#header07-q\" class=\"text-primary\"><b><i></i></b></a><a href=\"index.html#header07-q\" class=\"text-primary\"><i><b>Assista ao&nbsp;vídeo do curso de Princípios Básicos de IA.</b></i></a><br>\n<br><br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"page1.html#pricing03-1j\" class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\" target=\"_blank\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\" align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-1\">\n\t\t\t\t\t\t\t<b>02.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\">\n\t\t\t\t\t\t\t<b>Practical Course</b><br><b>Hands on</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\">Prepare-se para a ação! Nossos encontros de mentoria presencial foram desenhados para aprofundar seu aprendizado, divididos em três momentos chave:<br><br><b>Fazendo Juntos</b>: Para os alunos dos módulos iniciais, esta é a oportunidade de aplicar os conceitos básicos em exercícios práticos.<br><br><b>Mentoria Específica</b>: Uma sessão dedicada ao seu negócio, com estratégias e dinâmicas personalizadas, envolvendo ativamente os colaboradores da sua empresa.<br><br><b>Primeiros Passos:</b> Juntos, vamos construir o seu Business Case inicial, garantindo uma base sólida para suas próximas decisões.<br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"page1.html#pricing03-1l\" class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\" target=\"_blank\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"item features-without-image col-12 col-md-12 col-lg-4 item-mb\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<div class=\"align-left item-content\">\n\t\t\t\t\t\t<h5 class=\"mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number\" mbr-if=\"showCardTitle\" data-app-selector=\".mbr-number\" mbr-theme-style=\"display-1\">\n\t\t\t\t\t\t\t<b>03.</b>\n\t\t\t\t\t\t</h5>\n\t\t\t\t\t\t<h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardSubtitle\" data-app-selector=\".card-title, .iconfont-wrapper\"><b>Pocket Course</b><br><b>Sensibilização</b></h5>\n\t\t\t\t\t\t<p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text, .item .mbr-section-btn\">Oferecemos <b>cursos corporativos presenciais</b> para sensibilização de equipes, tanto executivas quanto operacionais.<br><br><b>Nosso diferencial? </b>Conteúdo até&nbsp;<b><i>100%</i></b> adaptado às realidades e necessidades específicas da sua empresa.<br><br><b>Módulos</b>: Mentoria <b>+</b> Conceitos Básicos <b>+</b> Hands on <b>+</b> acompanhamento.<br><br><br></p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn item-footer\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"page1.html#pricing03-1l\" class=\"btn item-btn btn-primary\" data-app-placeholder=\"Type Text\" target=\"_blank\">+ info</a></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "features036-1o",
+          "_cid": "uSbrS8FBcU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-description": {
+              "text-align": "left"
+            },
+            ".item-wrapper": {
+              "background": "@cardbg",
+              "margin-bottom": "2rem",
+              "padding": "2.25rem 2.25rem 1rem 2.25rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem",
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem 0.5rem 1.5rem",
+                "margin-bottom": "1rem"
+              }
+            },
+            ".card-title, .iconfont-wrapper": {
+              "color": "#000000"
+            },
+            ".card-text": {
+              "color": "#000000"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".card-text, .item .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              }
+            },
+            ".mbr-text UL": {
+              "text-align": "right"
+            },
+            ".mbr-text": {
+              "color": "#000000"
+            }
+          },
+          "_name": "features031",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features031\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Card</header>\n        <input type=\"color\" title=\"Card BG\" name=\"cardbg\" value=\"#ffffff\" selected>\n        <input type=\"color\" title=\"Card Color\" name=\"cardbg\" value=\"#ffffff\" selected>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ff0e0e\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText\">\n            <div class=\"col-md-12 content-head mb-5\">\n                <h1 class=\"mbr-section-title mbr-fonts-style  mb-0\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                    <b>Sobre</b></h1>\n                <p class=\"mbr-text mbr-fonts-style mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Great for pro-coders for fast prototyping and small customers' projects.\n                </p>\n            </div>\n        </div>\n        <div class=\"row justify-content-center  blockContent\">\n            <div class=\"col-12 col-lg\">\n                <div class=\"item-wrapper align-left\">\n                    <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                        <ul>\n                            <li><b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Profissional com mais de <b>25 anos de experiência em tecnologia</b>, e em transformação digital,  no seu dia a dia como consultor, ajuda as organizações a impulsionarem um crescimento sustentável, garantindo a segurança de seus ativos digitais.</span></b></li><li><b style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\"><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Nesta período desenvolveu soluções, conduziu projetos, treinou equipes e profissionais das mais diversas áreas, conduzindo de parcerias estratégicas com empresas de tecnologia nacionais e internacionais, gerenciando equipes e startups, desenvolvendo novos modelos de negócios, <b>consultoria e mentoring</b>.&nbsp;</span></b><br></li><li>Durante a jornada profissional, teve a satisfação de capacitar <b>mais de 2.800 alunos</b> através de aulas e seminários. Esses profissionais foram treinados em diversos contextos, garantindo uma formação completa e alinhada às demandas do mercado de tecnologia</li><li><b>Referências:</b></li><li>\"It was a great experience to work with JP. In addition to his knowledge and experience, he always looks at challenges from all sides, providing a balanced solution / recommendation. In addition ne balances kindness and assertiveness difficult to find in the same person. Thanks JP\" <b>André Marchiori - Executive | Advisor | Board Member</b></li><li>\"I had The pleasure to work with JP and together we won many client contracts together. He has strong negotiation skills and excels at client relationships. Strongly recommend him.\" <b>Djalma Brito - IBM</b></li><li>\"Recomendo o JP sem hesitação para qualquer projeto que exija alto nível de competência técnica e um compromisso inabalável com a qualidade e a segurança.\" <b>Luiz Correia - AET europe - Porto - Portugal - PKI Business Developer</b></li><li>\"JP possui fortes competências técnicas e visão holística de projetos, também é um ser humano especial na construção de relacionamentos fortes e duradouros, sendo peça fundamental em qualquer organização. Isso, sem falarmos a respeito de sua força, resiliência, empatia, simpatia e excelente capacidade de gestão e comunicação.\"<b> Marcos Brito - Latam Executive Sr.</b></li><li>\n</li><li>\n</li><li>\n</li><li><b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">\n</span></b></li><li><b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">\n</span></b></li>\n                        </ul>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{imageWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/imagem-335x503.png\" alt=\"JP\">\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "uROMfVEc6p",
+          "_anchor": "features031-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden",
+            ".media-container-row .mbr-text": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "footer04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">Contato<b>: <a href=\"mailto:ceo.oJohn@gmail.com\" class=\"text-white\">ceo.oJohn@gmail.com</a></b><br><b><a href=\"mailto:ceo.oJohn@gmail.com\" class=\"text-white\"><br></a></b>&nbsp;Rua Verbo Divino Nº 2001 - 3º andar - sala 305 - bloco B -&nbsp;Chácara Santo Antônio - São Paulo - SP - CEP 04719-00<br><br>© Copyright 2026 oJohn - All Rights Reserved<br>\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "footer04-1s",
+          "_isUserblock": true,
+          "_cid": "uSbA4xwhzP",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "oJohn - Serviços",
+        "meta_descr": "oJohn",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "socialSharingUrl": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/super%2520apps-ojohn-222x179.png",
+        "order": "1"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".item-head": {
+              "background": "@cardsHead",
+              "padding": "2.25rem",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".item-content": {
+              "padding": "2.25rem 2.25rem 0",
+              "background": "@cardsBg",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 1.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem"
+              }
+            },
+            ".item-wrapper": {
+              "border-radius": "2rem",
+              "overflow": "hidden",
+              "margin-bottom": "2rem",
+              "background": "@cardsBg",
+              "padding": "0rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-flow": "column nowrap",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                ".item-footer": {
+                  "padding": "0 1.5rem 3rem"
+                }
+              },
+              "@media (min-width: 1201px)": {
+                ".item-footer": {
+                  "padding": "0 2rem 3rem"
+                }
+              }
+            },
+            ".btn": {
+              "width": "-webkit-fill-available"
+            },
+            ".item:focus, span:focus": {
+              "outline": "none"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "auto !important",
+              "padding": "2rem 2rem 0",
+              "@media (max-width: 991px)": {
+                "padding": "0rem 2.25rem 2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#232323"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".item-title": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".item-subtitle": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              }
+            },
+            ".counter-container ul li": {
+              "margin-bottom": "1rem"
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            }
+          },
+          "_name": "pricing03",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing03\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"6\">2</option>\n      <option value=\"4\" selected>3</option>\n      <option value=\"3\">4</option>\n    </select>\n    <header>Card</header>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Subtitle\" checked>\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showList\" title=\"List\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <header>Color</header>\n    <input type=\"color\" name=\"cardsHead\" title=\"Head\" value=\"#000000\">\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ffffff\">\n    <input type=\"color\" name=\"iconColor\" title=\"Icon Color\" value=\"#4caf50\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Cursos </b><br><b>in Community</b></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n          </h5>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      \n      \n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb active\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Inteligência Artificial</b><br><b>in Community</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 99</b>/Aluno</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n              POCKET COURSE - CONCEITOS BÁSICOS\n            </b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>CBIA 101\n</li><li><b>Ideal para: </b>Associações, Clubes, Escolas e Condomínios.\n</li><li><b>Público-alvo:</b> Pequenos empresários e profissionais liberais.\n</li><li><b>Carga horária: </b>2 horas \n</li><li><b>Modelo: </b>Presencial\n</li><li><b>Descrição: </b>A inteligência artificial está em toda parte hoje em dia, nos celulares que usamos, nos filmes que assistimos, nas recomendações de compras online e até na forma como os médicos diagnosticam doenças. Mas afinal, o que é Inteligência Artificial? Não se preocupe se isso parece complexo. Vamos explorar esse universo juntos, com exemplos práticos e linguagem acessível. Durante este curso, você vai entender os conceitos básicos da IA, descobrir como ela impacta nosso dia a dia e conhecer as principais tecnologias que estão moldando o futuro. Tudo isso sem precisar de conhecimento técnico. Então, se você é um pequeno empresário, um profissional liberal ou mesmo para seu uso pessoal e familiar. Prepare-se para desmistificar a inteligência artificial e descobrir como ela pode ser uma ferramenta poderosa e não uma ameaça misteriosa.\n</li><li><b>Recursos: </b>Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.\n</li><li><i>Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.</i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Hands on</b><br><b>in Community</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 120</b>/Aluno</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>PRACTICAL COURSE </b><br><b>INTELIGÊNCIA ARTIFICIAL</b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>CBIA 102\n</li><li><b>Pré-requisito: </b>CBIA 101\n</li><li><b>Ideal para: </b>Associações, Clubes, Escolas e Condomínios.\n</li><li><b>Público-alvo: </b>Pequenos empresários e profissionais liberais.\n</li><li><b>Carga horária: </b>2 horas \n</li><li><b>Modelo:</b> Presencial\n</li><li><b>Descrição: </b>A inteligência artificial está em toda parte hoje em dia, nos celulares que usamos, nos filmes que assistimos, nas recomendações de compras online e até na forma como os médicos diagnosticam doenças. <b>Mas afinal, o que é Inteligência Artificial?</b> Não se preocupe se isso parece complexo. Vamos explorar esse universo juntos, com exemplos práticos e linguagem acessível. <b>Durante este curso, você vai entender os conceitos básicos da IA, descobrir como ela impacta nosso dia a dia e conhecer as principais tecnologias que estão moldando o futuro. Tudo isso sem precisar de conhecimento técnico.</b> Então, se você é um pequeno empresário, um profissional liberal ou mesmo para seu uso pessoal e familiar. <b>Prepare-se para desmistificar a inteligência artificial e descobrir como ela pode ser uma ferramenta poderosa e não uma ameaça misteriosa.\n</b></li><li><b>Recursos: </b>Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.\n</li><li><i>Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.</i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>ESG</b><br><b>in Community</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 99/Aluno</b></h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n              POCKET COURSE - CONCEITOS BÁSICOS\n            </b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código:</b> CBESG 201\n</li><li><b>Ideal para: </b>Associações, Clubes, Escolas e Condomínios.\n</li><li><b>Público-alvo: </b>Pequenos empresários e profissionais liberais. \n</li><li><b>Carga horária: </b>2 horas\n</li><li><b>Modelos: Presencial | </b>Online\n</li><li><b>Descrição: </b>Aprenda a integrar práticas ESG (Ambiental, Social e Governança) no seu negócio ou atuação profissional. Este curso prático e objetivo oferece o conhecimento essencial para pequenos empresários e profissionais liberais que buscam entender os pilares ESG e aplicá-los de forma estratégica, gerando valor, reduzindo riscos e atraindo clientes cada vez mais conscientes. \n</li><li><b>Recursos: </b>Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.\n</li><li><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\"><i>Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.</i></span><br></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uRUjqro5d8",
+          "_anchor": "pricing03-1k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".item-head": {
+              "background": "@cardsHead",
+              "padding": "2.25rem",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".item-content": {
+              "padding": "2.25rem 2.25rem 0",
+              "background": "@cardsBg",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 1.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem"
+              }
+            },
+            ".item-wrapper": {
+              "border-radius": "2rem",
+              "overflow": "hidden",
+              "margin-bottom": "2rem",
+              "background": "@cardsBg",
+              "padding": "0rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-flow": "column nowrap",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                ".item-footer": {
+                  "padding": "0 1.5rem 3rem"
+                }
+              },
+              "@media (min-width: 1201px)": {
+                ".item-footer": {
+                  "padding": "0 2rem 3rem"
+                }
+              }
+            },
+            ".btn": {
+              "width": "-webkit-fill-available"
+            },
+            ".item:focus, span:focus": {
+              "outline": "none"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "auto !important",
+              "padding": "2rem 2rem 0",
+              "@media (max-width: 991px)": {
+                "padding": "0rem 2.25rem 2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".item-title": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".item-subtitle": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              }
+            },
+            ".counter-container ul li": {
+              "margin-bottom": "1rem"
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            }
+          },
+          "_name": "pricing03",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing03\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"6\">2</option>\n      <option value=\"4\" selected>3</option>\n      <option value=\"3\">4</option>\n    </select>\n    <header>Card</header>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Subtitle\" checked>\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showList\" title=\"List\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <header>Color</header>\n    <input type=\"color\" name=\"cardsHead\" title=\"Head\" value=\"#757b62\">\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ffffff\">\n    <input type=\"color\" name=\"iconColor\" title=\"Icon Color\" value=\"#4caf50\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Cursos </b><br><b>in Company</b></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n          </h5>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      \n      \n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb active\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Inteligência Artificial</b><br><b>in Company</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 99</b>/Aluno</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n              POCKET COURSE - CONCEITOS BÁSICOS\n            </b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>CBIA 101</li><li><b>Público-alvo: </b>Gestores e equipes internas</li><li><b>Carga horária:</b> 2 horas \n</li><li><b>Modelo: </b>Presencial\n</li><li><b>Descrição: </b>A inteligência artificial está em toda parte hoje em dia, nos celulares que usamos, nos filmes que assistimos, nas recomendações de compras online e até na forma como os médicos diagnosticam doenças. <b>Mas afinal, o que é Inteligência Artificial?</b> Não se preocupe se isso parece complexo. Vamos explorar esse universo juntos, com exemplos práticos e linguagem acessível. <b>Durante este curso, o colaborador da sua empresa vai entender os conceitos básicos da IA, descobrir como ela impacta nosso dia a dia e conhecer as principais tecnologias que estão moldando o futuro. </b>Tudo isso sem precisar de conhecimento técnico. Então, se você é um pequeno empresário, um profissional liberal ou mesmo para seu uso pessoal e familiar. <b>Prepare-se para desmistificar a inteligência artificial e descobrir como ela pode ser uma ferramenta poderosa e não uma ameaça misteriosa.</b></li><li><b>Recursos: </b>Customização de Conteúdos |<b>&nbsp;</b>Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.\n</li><li><i style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.</i><br></li><li><i><b>Turma mínima de 10 alunos.</b></i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>ESG</b><br><b>in Company</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\"><b>R$ 120/Aluno</b></h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n              POCKET COURSE - CONCEITOS BÁSICOS\n            </b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>CBESG 201</li><li><b>Público-alvo: </b>Gestores e equipes internas</li><li><b>Especial TI: </b>Para turmas com profissionais de TI, o conteúdo é customizado com tecnologias afins.</li><li><b>Carga horária:</b> 2 horas \n</li><li><b>Modelo: </b>Presencial\n</li><li><b>Descrição: </b>Aprenda a integrar práticas ESG (Ambiental, Social e Governança) no seu negócio ou atuação profissional. Este curso prático e objetivo oferece o <b>conhecimento essencial para colaboradores internos </b>que buscam entender os pilares ESG e aplicá-los de forma estratégica, gerando valor, reduzindo riscos e atraindo clientes cada vez mais conscientes.&nbsp;</li><li><b>Recursos: </b>Customização de Conteúdos |<b>&nbsp;</b>Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.\n</li><li><i style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.</i><br></li><li><i><b>Turma mínima de 10 alunos.</b></i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n              <b>Hands on</b><br><b>in Company</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">sob demanda</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>PRACTICAL COURSE </b><br><b>INTELIGÊNCIA ARTIFICIAL</b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>PRCIA 301</li><li><b>Público-alvo: </b>Gestores e equipes internas</li><li><b>Carga horária:</b>&nbsp;8 horas \n</li><li><b>Modelo: </b>Presencial\n</li><li><b>Atividades:&nbsp;</b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\"><b>Fazendo Juntos</b>: Para os alunos dos módulos iniciais, esta é a oportunidade de aplicar os conceitos básicos em exercícios práticos. |&nbsp;</span><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\"><b>Mentoria Específica</b>: Uma sessão dedicada ao seu negócio, com estratégias e dinâmicas personalizadas, envolvendo ativamente os colaboradores da sua empresa. |&nbsp;</span><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\"><b>Primeiros Passos</b>: Juntos, vamos construir o seu Business Case inicial, garantindo uma base sólida para suas próximas decisões.</span></li><li><b style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Carga horária: </b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">08 horas</span><br></li><li><b style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Recursos: </b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Customização de Conteúdos |</span><b style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">&nbsp;</b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.</span><br></li><li><i style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.</i><br></li><li><i><b>Turma mínima de 10 alunos.</b></i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "pricing03-1t",
+          "_cid": "uSbEi2sfcv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".item-mb": {
+              "margin-bottom": "2rem",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".item-head": {
+              "background": "@cardsHead",
+              "padding": "2.25rem",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".item-content": {
+              "padding": "2.25rem 2.25rem 0",
+              "background": "@cardsBg",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "0rem 1.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem"
+              }
+            },
+            ".item-wrapper": {
+              "border-radius": "2rem",
+              "overflow": "hidden",
+              "margin-bottom": "2rem",
+              "background": "@cardsBg",
+              "padding": "0rem",
+              "height": "100%",
+              "display": "flex",
+              "flex-flow": "column nowrap",
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                ".item-footer": {
+                  "padding": "0 1.5rem 3rem"
+                }
+              },
+              "@media (min-width: 1201px)": {
+                ".item-footer": {
+                  "padding": "0 2rem 3rem"
+                }
+              }
+            },
+            ".btn": {
+              "width": "-webkit-fill-available"
+            },
+            ".item:focus, span:focus": {
+              "outline": "none"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "auto !important",
+              "padding": "2rem 2rem 0",
+              "@media (max-width: 991px)": {
+                "padding": "0rem 2.25rem 2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "0rem 1.5rem",
+                "margin-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#232323"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left"
+            },
+            ".item-title": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".item-subtitle": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".counter-container": {
+              "ul": {
+                "margin": "0",
+                "padding-left": "2.25rem",
+                "list-style": "none",
+                "li": {
+                  "position": "relative",
+                  "list-style": "none",
+                  "margin-bottom": "2rem",
+                  "&:before": {
+                    "position": "absolute",
+                    "left": "-1.5em",
+                    "content": "\"\"",
+                    "display": "flex",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "color": "@iconColor",
+                    "background-color": "@iconColor",
+                    "width": "0.5em",
+                    "height": "0.5em",
+                    "top": "0.4em",
+                    "border-radius": "50%"
+                  }
+                }
+              }
+            },
+            ".counter-container ul li": {
+              "margin-bottom": "1rem"
+            },
+            ".mbr-text UL": {
+              "text-align": "left"
+            }
+          },
+          "_name": "pricing03",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"pricing03\" group=\"Pricing\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\">\n    <select title=\"Columns\" name=\"columns\">\n      <option value=\"6\">2</option>\n      <option value=\"4\" selected>3</option>\n      <option value=\"3\">4</option>\n    </select>\n    <header>Card</header>\n    <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n    <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Subtitle\" checked>\n    <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n    <input type=\"checkbox\" name=\"showList\" title=\"List\" checked>\n    <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\" checked>\n    <header>Color</header>\n    <input type=\"color\" name=\"cardsHead\" title=\"Head\" value=\"#232323\">\n    <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#ffffff\">\n    <input type=\"color\" name=\"iconColor\" title=\"Icon Color\" value=\"#4caf50\">\n    <header>Background</header>\n    <fieldset type=\"background\" parallax name=\"bg\" required>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type == 'image'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-head\">\n        <div class=\"mbr-section-head mb-5\" mbr-if=\"showTitle || showSubtitle\">\n          <h4 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>Serviços</b><br></h4>\n          <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n          </h5>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      \n      \n      <div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb active\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>Sensibilização em IA</b><div><b>in Company</b></div></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">sob demanda</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>COURSE PACKAGE + MENTORIA\n<br>INTELIGÊNCIA ARTIFICIAL</b><br></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>CPKMENIA 401\n</li><li><b>Público-alvo: </b>Gestores e equipes internas\n</li><li><b>Carga horária: </b>16&nbsp;horas\n</li><li><b>Modelo: </b>Presencial | Online</li><li><b>Módulos: </b>Mentoria + Conceitos Básicos (CBIA 101 + Hands on (CBIA 102)  + acompanhamento.\n</li><li><b>Recursos: </b>Customização de Conteúdos | Acesso a canais exclusivos de conteúdos | Rodada de estudos práticos | Acesso online aos materiais dos cursos | Certificados de participação.\n</li><li><b>Ideal para: </b>Empresas\n</li><li><i>Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do instrutor serão de responsabilidade do cliente.\n</i></li><li><b>Turma mínima de 10 alunos.</b></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>Mentoria</b><br><b>in Company</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">sob demanda</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>SERVICE PACK</b><br><b>INTELIGÊNCIA ARTIFICIAL</b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>SPKMENIA 501</li><li><b>Público-alvo: </b>Gestores e equipes internas</li><li><b>Carga horária:</b>&nbsp;mínimo de 08 horas&nbsp;</li><li><b>Modelo: </b>Presencial | Online</li><li>\n</li><li><b>Módulos: </b>Mentoria e&nbsp; acompanhamento.</li><li><b style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Recursos: </b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">consultoria especializada.</span><br></li><li><i style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do mentor serão de responsabilidade do cliente.</i><br></li><li><i>A carga horária é estimada e mínima, caso haja necessidade de mais horas, será previamente acordado com o cliente.</i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div><div class=\"item features-without-image col-12 col-md-6 col-lg-{{columns}} item-mb\">\n        <div class=\"item-wrapper\">\n          <div class=\"item-head\">\n            <h5 class=\"item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>Super apps as a service</b></h5>\n            <h6 class=\"item-subtitle mbr-fonts-style mt-0 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">sob demanda</h6>\n          </div>\n          <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n            <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>SERVICE PACK</b><br><b>super apps as a service</b></p>\n            <div class=\"mb-4\" mbr-if=\"showList && showText\"></div>\n            <div class=\"counter-container mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-if=\"showList\">\n              <ul>\n                <li><b>Código: </b>SPKSAASIA 601</li><li><b>Público-alvo: </b>Gestores&nbsp;</li><li><b>Carga horária:</b>&nbsp;mínimo de 40 horas de desenvolvimento</li><li><b>Modelo: </b>subscrição mensal de uso</li><li>\n</li><li><b>Escopo: </b>desenvolvimento da solução a ser definida com o cliente.&nbsp;</li><li><b style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">Recursos: </b><span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">desenvolvimento e serviços em </span>nuvem<span style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\">.</span><br></li><li><i style=\"font-size: calc(1rem + 0 * ((100vw - 62rem) / 25));\"><b>50% de desconto </b>na Subscrição mensal do <b>IA Compara</b>.</i><br></li><li><i>Instalações do cliente | Base SP | Fora da base, custos de alimentação, viagem e estada do desenvolvedor serão de responsabilidade do cliente.</i></li><li><i>A carga horária é estimada e mínima, caso haja necessidade de mais horas, será previamente acordado com o cliente.</i></li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"mbr-section-btn item-footer \" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\"><a href=\"mailto:ceo.ojohn@gmail.com\" class=\"btn item-btn btn-black-outline\" data-app-placeholder=\"Type Text\">Solicite sua cotação</a></div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uRUjqrLHXW",
+          "_anchor": "pricing03-1l",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden",
+            ".media-container-row .mbr-text": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "footer04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer4\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#2e481a\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">Contato<b>: <a href=\"mailto:ceo.oJohn@gmail.com\" class=\"text-white\">ceo.oJohn@gmail.com</a></b><br><b><a href=\"mailto:ceo.oJohn@gmail.com\" class=\"text-white\"><br></a></b>&nbsp;Rua Verbo Divino Nº 2001 - 3º andar - sala 305 - bloco B -&nbsp;Chácara Santo Antônio - São Paulo - SP - CEP 04719-00<br><br>© Copyright 2026 oJohn - All Rights Reserved<br>\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "footer04-1s",
+          "_isUserblock": true,
+          "_cid": "uSbA4xwhzP",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
