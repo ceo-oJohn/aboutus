@@ -1050,7 +1050,7 @@ a {
 }
 .cid-viMDjQJWVj .item-subtitle {
   text-align: left;
-  color: #ffeb69;
+  color: #ffffff;
 }
 .cid-viMDjQJWVj .content-head {
   max-width: 800px;
@@ -1348,92 +1348,6 @@ a {
 }
 .cid-uSbrS8FBcU .item-content .item-footer {
   margin-top: auto;
-}
-.cid-uROMfVEc6p {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ff0e0e;
-}
-.cid-uROMfVEc6p .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uROMfVEc6p .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uROMfVEc6p .mbr-description {
-  text-align: left;
-}
-.cid-uROMfVEc6p .item-wrapper {
-  background: #ffffff;
-  margin-bottom: 2rem;
-  padding: 2.25rem 2.25rem 1rem 2.25rem;
-}
-@media (max-width: 767px) {
-  .cid-uROMfVEc6p .item-wrapper {
-    padding: 2rem 1.5rem 0.5rem 1.5rem;
-    margin-bottom: 1rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .cid-uROMfVEc6p .item-wrapper {
-    padding: 2rem 1.5rem 0.5rem 1.5rem;
-    margin-bottom: 1rem;
-  }
-}
-.cid-uROMfVEc6p .card-title,
-.cid-uROMfVEc6p .iconfont-wrapper {
-  color: #000000;
-}
-.cid-uROMfVEc6p .card-text {
-  color: #000000;
-}
-.cid-uROMfVEc6p .mbr-section-title {
-  color: #ffffff;
-  text-align: center;
-}
-.cid-uROMfVEc6p .mbr-text,
-.cid-uROMfVEc6p .mbr-section-btn {
-  text-align: center;
-}
-.cid-uROMfVEc6p .card-text,
-.cid-uROMfVEc6p .item .mbr-section-btn {
-  text-align: left;
-}
-.cid-uROMfVEc6p .counter-container ul {
-  margin: 0;
-  padding-left: 2.25rem;
-  list-style: none;
-}
-.cid-uROMfVEc6p .counter-container ul li {
-  position: relative;
-  list-style: none;
-  margin-bottom: 2rem;
-}
-.cid-uROMfVEc6p .counter-container ul li:before {
-  position: absolute;
-  left: -1.5em;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color: #ffffff;
-  width: 0.5em;
-  height: 0.5em;
-  top: 0.4em;
-  border-radius: 50%;
-}
-.cid-uROMfVEc6p .mbr-text UL {
-  text-align: right;
-}
-.cid-uROMfVEc6p .mbr-text {
-  color: #000000;
 }
 .cid-uSbA4xwhzP {
   padding-top: 1rem;
