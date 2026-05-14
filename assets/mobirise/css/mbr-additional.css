@@ -642,8 +642,8 @@ a:hover {
   color: #a3d7a5;
 }
 /* Scroll to top button*/
-#scrollToTop a {
-  border-radius: 100px;
+.scrollToTop_wraper {
+  display: none;
 }
 .form-control {
   font-family: 'Inter Tight', sans-serif;
@@ -944,55 +944,10 @@ a {
 .cid-vjkHlIP1Nl .content-head {
   max-width: 800px;
 }
-.cid-viMrNhGBvT {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-image: url("../../../assets/images/background1.jpg");
-}
-.cid-viMrNhGBvT .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-viMrNhGBvT .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (max-width: 991px) {
-  .cid-viMrNhGBvT .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-viMrNhGBvT .row {
-  flex-direction: row-reverse;
-}
-.cid-viMrNhGBvT .row {
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .cid-viMrNhGBvT .image-wrapper {
-    padding: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-viMrNhGBvT .text-wrapper {
-    padding: 0 2rem;
-  }
-}
-.cid-viMrNhGBvT .mbr-section-title {
-  color: #ffffff;
-}
-.cid-viMrNhGBvT .mbr-text,
-.cid-viMrNhGBvT .mbr-section-btn {
-  color: #232323;
-}
 .cid-vjkHmhbkWf {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #000000;
+  background-image: url("../../../assets/images/background1.jpg");
 }
 .cid-vjkHmhbkWf .mbr-fallback-image.disabled {
   display: none;
@@ -1049,7 +1004,7 @@ a {
   }
 }
 .cid-viMDjQJWVj .item-head {
-  background: #ff0e0e;
+  background: #232323;
   padding: 2.25rem;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1150,7 +1105,7 @@ a {
 .cid-viMOX6PSOV {
   padding-top: 0rem;
   padding-bottom: 0rem;
-  background-color: #ff0e0e;
+  background-color: #000000;
 }
 .cid-viMOX6PSOV .mbr-fallback-image.disabled {
   display: none;
@@ -1237,7 +1192,7 @@ a {
   max-width: 800px;
 }
 .cid-vjrRZpRoYZ .mbr-section-title {
-  color: #000000;
+  color: #ffffff;
 }
 .cid-vjrRZpRoYZ .mbr-section-subtitle {
   color: #000000;
