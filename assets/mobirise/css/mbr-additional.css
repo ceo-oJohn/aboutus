@@ -2137,6 +2137,7 @@ a {
   transition: 0.3s all !important;
   min-width: auto;
   background: #ffffff;
+  background: rgba(255, 255, 255, 0.9) !important;
 }
 .cid-vnblI1fXy1 .nav-item:focus,
 .cid-vnblI1fXy1 .nav-link:focus {
@@ -2378,11 +2379,11 @@ a {
 }
 .cid-vnblI1fXy1 .navbar-dropdown {
   padding: 0;
-  background-color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.9) !important;
   position: fixed;
 }
 .cid-vnblI1fXy1 .opacityScroll {
-  background: rgba(255, 255, 255, 0) !important;
+  background: #ffffff !important;
 }
 .cid-vnblI1fXy1 a.nav-link {
   display: flex;
@@ -2468,6 +2469,9 @@ a {
     padding: 1rem;
     border-radius: 1.5rem;
     background: #ffffff;
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
     backdrop-filter: blur(8px);
   }
   .cid-vnblI1fXy1 .navbar-nav .nav-item .nav-link::after {
@@ -2547,7 +2551,9 @@ a {
 }
 .cid-vn8QvD8Z27 {
   display: flex;
-  background-color: #ffffff;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-color: #000000;
 }
 .cid-vn8QvD8Z27 .mbr-fallback-image.disabled {
   display: none;
@@ -2596,13 +2602,77 @@ a {
   }
 }
 .cid-vn8QvD8Z27 .mbr-section-title {
-  text-align: center;
-  color: #ff0e0e;
+  text-align: left;
+  color: #ffffff;
 }
 .cid-vn8QvD8Z27 .mbr-text,
 .cid-vn8QvD8Z27 .mbr-section-btn {
-  text-align: justify;
-  color: #232323;
+  text-align: left;
+  color: #edefeb;
+}
+.cid-vnoTsckyXY {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-vnoTsckyXY .item-wrapper img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
+.cid-vnoTsckyXY .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vnoTsckyXY .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vnoTsckyXY .item-wrapper {
+  background: #ff0e0e;
+  padding: 2.25rem;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .cid-vnoTsckyXY .item-wrapper {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-vnoTsckyXY .item-wrapper {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.cid-vnoTsckyXY .card-title,
+.cid-vnoTsckyXY .iconfont-wrapper {
+  color: #ffffff;
+}
+.cid-vnoTsckyXY .content-head {
+  max-width: 800px;
+}
+.cid-vnoTsckyXY .mbr-section-title {
+  color: #000000;
+}
+.cid-vnoTsckyXY .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-vnoTsckyXY .card-text {
+  color: #ffffff;
+}
+.cid-vnoTsckyXY .item-mb {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-vnoTsckyXY .item-mb {
+    margin-bottom: 1rem;
+  }
 }
 .cid-vnbqKFEPB7 {
   padding-top: 6rem;
@@ -2652,58 +2722,106 @@ a {
 .cid-vnbqKFEPB7 .content-head {
   max-width: 800px;
 }
-.cid-vnbzjAtlco {
+.cid-vnoGEpyLE2 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #edefeb;
+  background-color: #ffffff;
 }
-.cid-vnbzjAtlco .item-subtitle {
+.cid-vnoGEpyLE2 .item-subtitle {
   line-height: 1.2;
   color: #232323;
   text-align: center;
 }
-.cid-vnbzjAtlco img,
-.cid-vnbzjAtlco .item-img {
+.cid-vnoGEpyLE2 img,
+.cid-vnoGEpyLE2 .item-img {
   width: 100%;
 }
-.cid-vnbzjAtlco .item:focus,
-.cid-vnbzjAtlco span:focus {
+.cid-vnoGEpyLE2 .item:focus,
+.cid-vnoGEpyLE2 span:focus {
   outline: none;
 }
-.cid-vnbzjAtlco .item {
+.cid-vnoGEpyLE2 .item {
   margin-bottom: 2rem;
 }
 @media (max-width: 767px) {
-  .cid-vnbzjAtlco .item {
+  .cid-vnoGEpyLE2 .item {
     margin-bottom: 1rem;
   }
 }
-.cid-vnbzjAtlco .item-wrapper {
+.cid-vnoGEpyLE2 .item-wrapper {
   position: relative;
   border-radius: 4px;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
 }
-.cid-vnbzjAtlco .mbr-section-title {
+.cid-vnoGEpyLE2 .mbr-section-title {
+  color: #000000;
+}
+.cid-vnoGEpyLE2 .mbr-text,
+.cid-vnoGEpyLE2 .mbr-section-btn {
+  color: #000000;
+  text-align: right;
+}
+.cid-vnoGEpyLE2 .item-title {
+  color: #000000;
+  text-align: right;
+}
+.cid-vnoGEpyLE2 .content-head {
+  max-width: 800px;
+}
+.cid-vnoIzRNUnw {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ff0e0e;
+}
+.cid-vnoIzRNUnw .item-subtitle {
+  line-height: 1.2;
+  color: #232323;
+  text-align: center;
+}
+.cid-vnoIzRNUnw img,
+.cid-vnoIzRNUnw .item-img {
+  width: 100%;
+}
+.cid-vnoIzRNUnw .item:focus,
+.cid-vnoIzRNUnw span:focus {
+  outline: none;
+}
+.cid-vnoIzRNUnw .item {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-vnoIzRNUnw .item {
+    margin-bottom: 1rem;
+  }
+}
+.cid-vnoIzRNUnw .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cid-vnoIzRNUnw .mbr-section-title {
   color: #ffffff;
 }
-.cid-vnbzjAtlco .mbr-text,
-.cid-vnbzjAtlco .mbr-section-btn {
-  color: #000000;
+.cid-vnoIzRNUnw .mbr-text,
+.cid-vnoIzRNUnw .mbr-section-btn {
+  color: #ffffff;
   text-align: right;
 }
-.cid-vnbzjAtlco .item-title {
-  color: #000000;
+.cid-vnoIzRNUnw .item-title {
+  color: #ffffff;
   text-align: right;
 }
-.cid-vnbzjAtlco .content-head {
+.cid-vnoIzRNUnw .content-head {
   max-width: 800px;
 }
 .cid-vnbDU8NkaZ {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #ff0e0e;
+  background-color: #ffffff;
 }
 .cid-vnbDU8NkaZ .item-subtitle {
   line-height: 1.2;
@@ -2734,15 +2852,15 @@ a {
   flex-flow: column nowrap;
 }
 .cid-vnbDU8NkaZ .mbr-section-title {
-  color: #ffffff;
+  color: #000000;
 }
 .cid-vnbDU8NkaZ .mbr-text,
 .cid-vnbDU8NkaZ .mbr-section-btn {
-  color: #ffffff;
+  color: #000000;
   text-align: right;
 }
 .cid-vnbDU8NkaZ .item-title {
-  color: #ffffff;
+  color: #000000;
   text-align: right;
 }
 .cid-vnbDU8NkaZ .content-head {
@@ -2751,7 +2869,7 @@ a {
 .cid-vnbH2IbKuh {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #edefeb;
+  background-color: #ff0e0e;
 }
 .cid-vnbH2IbKuh .item-subtitle {
   line-height: 1.2;
@@ -2786,11 +2904,11 @@ a {
 }
 .cid-vnbH2IbKuh .mbr-text,
 .cid-vnbH2IbKuh .mbr-section-btn {
-  color: #000000;
+  color: #ffffff;
   text-align: right;
 }
 .cid-vnbH2IbKuh .item-title {
-  color: #000000;
+  color: #ffffff;
   text-align: right;
 }
 .cid-vnbH2IbKuh .content-head {
