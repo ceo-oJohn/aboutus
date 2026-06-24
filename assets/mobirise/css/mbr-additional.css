@@ -642,8 +642,8 @@ a:hover {
   color: #a3d7a5;
 }
 /* Scroll to top button*/
-#scrollToTop a {
-  border-radius: 100px;
+.scrollToTop_wraper {
+  display: none;
 }
 .form-control {
   font-family: 'Inter Tight', sans-serif;
@@ -1198,7 +1198,6 @@ a {
 .cid-vnpC2J7pJg .navbar-dropdown {
   padding: 0;
   background: rgba(255, 255, 255, 0.9) !important;
-  position: fixed;
 }
 .cid-vnpC2J7pJg .opacityScroll {
   background: #ffffff !important;
@@ -3066,7 +3065,6 @@ a {
 .cid-vnblI1fXy1 .navbar-dropdown {
   padding: 0;
   background: rgba(255, 255, 255, 0.9) !important;
-  position: fixed;
 }
 .cid-vnblI1fXy1 .opacityScroll {
   background: #ffffff !important;
@@ -4069,7 +4067,6 @@ a {
 .cid-vnpC2J7pJg .navbar-dropdown {
   padding: 0;
   background: rgba(255, 255, 255, 0.9) !important;
-  position: fixed;
 }
 .cid-vnpC2J7pJg .opacityScroll {
   background: #ffffff !important;
