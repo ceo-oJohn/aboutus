@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ojohn | Inteligência Artificial e Transformação Digital com Foco Humano</title>
+
+  <!-- Favicon Oficial ojohn -->
+  <link rel="icon" type="image/png" href="red-circles-final-1-128x96.png">
+
+  <!-- Tipografia Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & PALETA DE CORES
+       ========================================================================== */
+    :root {
+      --color-red: #FF0302;
+      --color-black: #000000;
+      --color-dark: #000000;
+      --color-light-bg: #F8F8FA;
+      --color-border: #E5E5E8;
+      --color-white: #FFFFFF;
+      --color-text-main: #1A1A1A;
+      --color-text-muted: #666666;
+
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-main);
+      background-color: var(--color-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .highlight-title {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       LOGOS OFICIAIS
+       ========================================================================== */
+    .brand-logo-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .header-logo-img {
+      height: 64px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+
+    .header-logo-img:hover {
+      transform: scale(1.03);
+    }
+
+    .footer-logo-img {
+      height: 70px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    /* ==========================================================================
+       BOTÕES & COMPONENTES
+       ========================================================================== */
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-align: center;
+      border: none;
+    }
+
+    .btn-red {
+      background-color: var(--color-red);
+      color: var(--color-white);
+      border: 2px solid var(--color-red);
+    }
+
+    .btn-red:hover {
+      background-color: #D60201;
+      border-color: #D60201;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 3, 2, 0.25);
+    }
+
+    .btn-outline-white {
+      background-color: transparent;
+      color: var(--color-white);
+      border: 2px solid var(--color-white);
+    }
+
+    .btn-outline-white:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+
+    .btn-outline-dark {
+      background-color: transparent;
+      color: var(--color-black);
+      border: 2px solid var(--color-black);
+    }
+
+    .btn-outline-dark:hover {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+
+    .tag-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background-color: var(--color-red);
+      color: var(--color-white);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    /* ==========================================================================
+       1. CABEÇALHO & MENU HAMBÚRGUER
+       ========================================================================== */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 1000;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 90px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-black);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-red);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .mobile-menu-btn span {
+      width: 100%;
+      height: 3px;
+      background-color: var(--color-black);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    /* ==========================================================================
+       2. HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      padding: 110px 0 130px 0;
+    }
+
+    .hero-content {
+      max-width: 860px;
+    }
+
+    .hero-title {
+      font-size: 3.6rem;
+      line-height: 1.12;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .hero-title span {
+      color: var(--color-red);
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: #D1D1D6;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ==========================================================================
+       3. SEÇÃO SOBRE
+       ========================================================================== */
+    .about-section {
+      padding: 100px 0;
+      background-color: var(--color-white);
+    }
+
+    .section-header {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 2.6rem;
+      color: var(--color-black);
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 780px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+    }
+
+    .card-feature {
+      background-color: var(--color-light-bg);
+      padding: 40px;
+      border-top: 4px solid var(--color-red);
+      border-radius: 4px;
+    }
+
+    .card-feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+      color: var(--color-black);
+    }
+
+    /* ==========================================================================
+       4. SEÇÃO NOVIDADES (NR1-MANAGER & GRUPOS FECHADOS)
+       ========================================================================== */
+    .news-section {
+      padding: 100px 0;
+      background-color: var(--color-light-bg);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .news-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    .news-card-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-red);
+      margin-bottom: 12px;
+    }
+
+    .news-card h3 {
+      font-size: 1.6rem;
+      color: var(--color-black);
+      margin-bottom: 14px;
+    }
+
+    .news-card p {
+      color: #555555;
+      font-size: 0.98rem;
+      margin-bottom: 24px;
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       5. CENTRAL INTERATIVA DA EQUIPE DIGITAL
+       ========================================================================== */
+    .video-section {
+      padding: 100px 0;
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+
+    .team-filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: #1A1A1A;
+      color: var(--color-white);
+      border: 1px solid #333333;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background-color: var(--color-red);
+      border-color: var(--color-red);
+    }
+
+    .video-card {
+      background: #111111;
+      border: 1px solid #222222;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-info {
+      padding: 24px;
+    }
+
+    .video-info h3 {
+      font-size: 1.3rem;
+      color: var(--color-white);
+      margin-bottom: 4px;
+    }
+
+    .video-role {
+      color: var(--color-red);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .video-info p {
+      font-size: 0.9rem;
+      color: #AAAAAA;
+    }
+
+    /* ==========================================================================
+       6. JORNADA & PLANOS
+       ========================================================================== */
+    .pricing-section {
+      padding: 100px 0;
+      background-color: var(--color-white);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .price-card {
+      background-color: var(--color-white);
+      padding: 36px 28px;
+      border-radius: 6px;
+      border: 1px solid var(--color-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .price-card.featured {
+      border: 2px solid var(--color-red);
+      box-shadow: 0 12px 30px rgba(255, 3, 2, 0.1);
+    }
+
+    .card-header-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--color-red);
+      margin-bottom: 8px;
+    }
+
+    .plan-title {
+      font-size: 1.6rem;
+      color: var(--color-black);
+      margin-bottom: 8px;
+    }
+
+    .price-tag {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--color-black);
+      margin-bottom: 16px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+
+    .feature-list li {
+      margin-bottom: 12px;
+      font-size: 0.92rem;
+      display: flex;
+      gap: 10px;
+    }
+
+    .feature-list li::before {
+      content: "■";
+      color: var(--color-red);
+    }
+
+    .promo-alert {
+      background-color: #FFF0F0;
+      border-left: 3px solid var(--color-red);
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-red);
+      margin-bottom: 20px;
+    }
+
+    .combo-card {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      padding: 44px;
+      border-radius: 6px;
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      border-left: 6px solid var(--color-red);
+    }
+
+    .combo-price {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--color-red);
+    }
+
+    /* ==========================================================================
+       7. AGENDA DE EVENTOS
+       ========================================================================== */
+    .agenda-section {
+      padding: 100px 0;
+      background-color: var(--color-light-bg);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .agenda-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+
+    .agenda-table th, .agenda-table td {
+      padding: 18px 24px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .agenda-table th {
+      background-color: var(--color-white);
+      font-weight: 700;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+
+    .status-open { background-color: var(--color-red); color: var(--color-white); }
+    .status-prep { background-color: #E2E2E6; color: var(--color-black); }
+    .status-done { background-color: #F0F0F0; color: #777777; }
+
+    /* ==========================================================================
+       8. IA CORPORATIVA
+       ========================================================================== */
+    .b2b-section {
+      padding: 100px 0;
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+
+    .b2b-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .b2b-card {
+      background-color: #111111;
+      border: 1px solid #222222;
+      padding: 36px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .num-indicator {
+      font-size: 2.2rem;
+      color: var(--color-red);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .b2b-card h3 {
+      font-size: 1.35rem;
+      color: var(--color-white);
+      margin-bottom: 12px;
+    }
+
+    .b2b-card p {
+      color: #AAAAAA;
+      font-size: 0.93rem;
+      line-height: 1.6;
+    }
+
+    .b2b-list {
+      list-style: none;
+      margin-top: 14px;
+    }
+
+    .b2b-list li {
+      font-size: 0.88rem;
+      color: #CCCCCC;
+      margin-bottom: 8px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .b2b-list li::before {
+      content: "•";
+      color: var(--color-red);
+      font-weight: bold;
+    }
+
+    /* ==========================================================================
+       9. FORMULÁRIO DE CONTATO
+       ========================================================================== */
+    .contact-section {
+      padding: 100px 0;
+      background-color: var(--color-light-bg);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .contact-form-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: var(--color-white);
+      padding: 48px;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+
+    .form-type-selector {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .type-btn {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid var(--color-border);
+      background: transparent;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .type-btn.active {
+      border-color: var(--color-red);
+      background-color: #FFF0F0;
+      color: var(--color-red);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      color: var(--color-black);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-red);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-success-msg {
+      display: none;
+      background-color: #E8F5E9;
+      color: #2E7D32;
+      padding: 16px;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* ==========================================================================
+       10. RODAPÉ (PRETO ABSOLUTO) COM ACCORDION EXPANSÍVEL
+       ========================================================================== */
+    footer {
+      background-color: #000000;
+      color: var(--color-white);
+      padding: 80px 0 40px 0;
+      border-top: 4px solid var(--color-red);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 48px;
+      margin-bottom: 40px;
+    }
+
+    .footer-title {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: var(--color-white);
+    }
+
+    .footer-address {
+      color: #AAAAAA;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .footer-email a {
+      color: var(--color-red);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222222;
+      padding-top: 30px;
+      font-size: 0.82rem;
+      color: #777777;
+    }
+
+    /* BOTÕES DE EXPANSÃO / ACCORDION NO RODAPÉ */
+    .footer-expand-controls {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-expand-btn {
+      background: #111111;
+      border: 1px solid #333333;
+      color: #DDDDDD;
+      padding: 10px 18px;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+
+    .footer-expand-btn:hover, .footer-expand-btn.active {
+      border-color: var(--color-red);
+      color: var(--color-white);
+      background-color: #1A1A1A;
+    }
+
+    .footer-expand-btn .icon-arrow {
+      font-size: 0.75rem;
+      transition: transform 0.3s ease;
+    }
+
+    .footer-expand-btn.active .icon-arrow {
+      transform: rotate(180deg);
+    }
+
+    /* CONTEÚDO EXPANSÍVEL DO RODAPÉ */
+    .footer-collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+      opacity: 0;
+      background-color: #0A0A0A;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+
+    .footer-collapsible-content.open {
+      max-height: 1000px;
+      opacity: 1;
+      padding: 32px;
+      margin-bottom: 24px;
+      border-color: #222222;
+    }
+
+    /* SITEMAP DENTRO DO ACCORDION */
+    .sitemap-grid-footer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+
+    .sitemap-grid-footer h4 {
+      font-size: 1rem;
+      color: var(--color-white);
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--color-red);
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    .sitemap-grid-footer ul {
+      list-style: none;
+    }
+
+    .sitemap-grid-footer ul li {
+      margin-bottom: 8px;
+    }
+
+    .sitemap-grid-footer ul li a {
+      color: #AAAAAA;
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s ease;
+    }
+
+    .sitemap-grid-footer ul li a:hover {
+      color: var(--color-red);
+    }
+
+    /* PRIVACIDADE E LGPD DENTRO DO ACCORDION */
+    .lgpd-footer-box h3 {
+      font-size: 1.2rem;
+      color: var(--color-white);
+      margin-bottom: 12px;
+    }
+
+    .lgpd-footer-box p {
+      font-size: 0.9rem;
+      color: #CCCCCC;
+      line-height: 1.65;
+    }
+
+    /* RESPONSIVIDADE MOBILE */
+    @media (max-width: 768px) {
+      .hero-title { font-size: 2.4rem; }
+
+      .mobile-menu-btn { display: flex; }
+
+      .nav-links {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-white);
+        flex-direction: column;
+        padding: 32px 24px;
+        gap: 20px;
+        border-bottom: 2px solid var(--color-red);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+      }
+
+      .nav-links.active {
+        transform: translateY(0);
+      }
+
+      .form-row { grid-template-columns: 1fr; }
+      .combo-card { flex-direction: column; align-items: flex-start; }
+      .footer-expand-controls { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HEADER NAVEGAÇÃO -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo-link">
+        <img src="Verm-Fundo Branco.jpeg" alt="ojohn" class="header-logo-img">
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#novidades">Novidades</a></li>
+        <li><a href="#equipe-digital">Equipe Digital</a></li>
+        <li><a href="#jornada">Cursos & Planos</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#corporativo">IA Corporativa</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a href="https://www.sympla.com.br/produtor/ojohn" target="_blank" class="btn btn-red">Inscreva-se</a>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <span class="tag-badge">Transformação Digital Humana</span>
+      <h1 class="hero-title">Inteligência Artificial <span>Descomplicada</span> para Pessoas e Negócios.</h1>
+      <p class="hero-subtitle">Capacitações e mentorias em IA com <strong>linguagem 100% acessível</strong>. Eliminamos barreiras técnicas e jargões complexos para gerar segurança, aplicação prática imediata e desenvolvimento humano.</p>
+      <div class="hero-actions">
+        <a href="#jornada" class="btn btn-red">Conheça Nossos Cursos</a>
+        <a href="#corporativo" class="btn btn-outline-white">Soluções Corporativas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SEÇÃO SOBRE -->
+  <section id="sobre" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre a ojohn</h2>
+        <p class="section-subtitle">Somos especialistas em treinamento e mentoria em Inteligência Artificial e Transformação Digital com o propósito claro de humanizar a tecnologia.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card-feature">
+          <h3>Linguagem 100% Acessível</h3>
+          <p>Traduzimos conceitos tecnológicos complexos para uma comunicação direta, simples e amigável para o público não técnico.</p>
+        </div>
+        <div class="card-feature">
+          <h3>Resultado Prático & Seguro</h3>
+          <p>Metodologia focada na execução imediata e no uso responsável das ferramentas digitais no seu contexto profissional.</p>
+        </div>
+        <div class="card-feature">
+          <h3>Desenvolvimento Humano</h3>
+          <p>Acreditamos que a tecnologia deve servir para potencializar talentos, otimizar rotinas e libertar o tempo das pessoas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SEÇÃO NOVIDADES (NR1-MANAGER & GRUPOS FECHADOS) -->
+  <section id="novidades" class="news-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Inovação Contínua</span>
+        <h2 class="section-title">Novidades ojohn</h2>
+        <p class="section-subtitle">Soluções inovadoras criadas para apoiar empresas e entidades na adoção inteligente e segura de novas tecnologias.</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- NR1-Manager -->
+        <div class="news-card">
+          <div>
+            <span class="news-card-tag">Aplicações de IA</span>
+            <h3>NR1-Manager</h3>
+            <p>
+              Plataforma desenvolvida para auxiliar empresas de todos os portes no cumprimento das exigências da <strong>Norma Regulamentadora 1 (NR-1)</strong>. Utiliza inteligência artificial para gerir riscos psicossociais e operacionais com eficiência, total segurança e rigorosa conformidade com a <strong>LGPD</strong>.
+            </p>
+          </div>
+          <div>
+            <a href="https://ojohn.com.br/nr1-manager.html" target="_blank" class="btn btn-red" style="width: 100%;">Descubra o NR1-Manager</a>
+          </div>
+        </div>
+
+        <!-- Cursos para Grupos Fechados -->
+        <div class="news-card">
+          <div>
+            <span class="news-card-tag">Cursos Presenciais</span>
+            <h3>Grupos Fechados & Entidades</h3>
+            <p>
+              Leve a experiência prática do curso <strong>IA.Playground</strong> para a sua empresa, associação, clube ou entidade de classe. Conteúdo customizado e preparado sob medida para o perfil e as necessidades do seu quadro associativo.
+            </p>
+          </div>
+          <div>
+            <a href="#contato" class="btn btn-outline-dark" style="width: 100%;">Solicitar Proposta para Entidade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CENTRAL INTERATIVA DA EQUIPE DIGITAL -->
+  <section id="equipe-digital" class="video-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+        <span class="tag-badge">A ojohn na Prática</span>
+        <h2 class="section-title" style="color: var(--color-white);">Nossa Equipe Digital Explicando o Que Fazemos</h2>
+        <p class="section-subtitle" style="color: #AAAAAA; margin: 0 auto; max-width: 680px;">
+          Conheça o Iago, a Bia e a Lia — nossa equipe digital explicando como tornamos a inteligência artificial simples, acessível e aplicável ao seu dia a dia.
+        </p>
+      </div>
+
+      <div class="team-filter-buttons">
+        <button class="filter-btn active" data-target="all">Todos os Vídeos</button>
+        <button class="filter-btn" data-target="iago">Iago (Propósito)</button>
+        <button class="filter-btn" data-target="bia">Bia (Cursos)</button>
+        <button class="filter-btn" data-target="lia">Lia (Corporativo)</button>
+      </div>
+
+      <div class="grid-3">
+        <!-- Vídeo Iago -->
+        <div class="video-card" data-member="iago">
+          <div class="video-wrapper">
+            <video controls preload="metadata">
+              <source src="https://ojohn.com.br/Iago%20V1.0.mp4" type="video/mp4">
+              Seu navegador não suporta a exibição deste vídeo.
+            </video>
+          </div>
+          <div class="video-info">
+            <h3>Iago</h3>
+            <span class="video-role">Propósito & Metodologia</span>
+            <p>Explica o compromisso da ojohn em humanizar a tecnologia através de uma linguagem 100% acessível para o público não técnico.</p>
+          </div>
+        </div>
+
+        <!-- Vídeo Bia -->
+        <div class="video-card" data-member="bia">
+          <div class="video-wrapper">
+            <video controls preload="metadata">
+              <source src="https://ojohn.com.br/Bia%20V1.0.mp4" type="video/mp4">
+              Seu navegador não suporta a exibição deste vídeo.
+            </video>
+          </div>
+          <div class="video-info">
+            <h3>Bia</h3>
+            <span class="video-role">Cursos & Assinaturas</span>
+            <p>Apresenta a jornada de evolução individual: o curso IA.Playground, as assinaturas contínuas e as mentorias aceleradas.</p>
+          </div>
+        </div>
+
+        <!-- Vídeo Lia -->
+        <div class="video-card" data-member="lia">
+          <div class="video-wrapper">
+            <video controls preload="metadata">
+              <source src="https://ojohn.com.br/Lia%20V1.0.mp4" type="video/mp4">
+              Seu navegador não suporta a exibição deste vídeo.
+            </video>
+          </div>
+          <div class="video-info">
+            <h3>Lia</h3>
+            <span class="video-role">Soluções Corporativas B2B</span>
+            <p>Detalha nossos treinamentos In Company, Pocket Courses, mentoria de tecnologia estratégica e o desenvolvimento de Super Apps NoCode.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PLANOS E CURSOS -->
+  <section id="jornada" class="pricing-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Comece a Sua Jornada</h2>
+        <p class="section-subtitle">Evolução contínua: Cursos Individuais &rarr; Assinatura Mensal &rarr; Mentoria Personalizada.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- IA.Playground -->
+        <div class="price-card">
+          <div>
+            <span class="card-header-tag">Passo Inicial</span>
+            <h3 class="plan-title">IA.Playground</h3>
+            <div class="price-tag">R$ 328 <span>/curso</span></div>
+            <p class="plan-desc">Aprenda na prática e aplique no mesmo dia!</p>
+            <ul class="feature-list">
+              <li>02h de Treinamento Presencial com suporte do instrutor</li>
+              <li>02h de encontros online acompanhados</li>
+              <li>Exercícios práticos adaptados ao seu negócio</li>
+              <li>Carga Horária Total: 4 horas</li>
+              <li>Inclusos: Materiais online + Certificado</li>
+            </ul>
+          </div>
+          <div>
+            <div class="promo-alert">PROMOÇÃO: 10% de desconto para ex-alunos</div>
+            <a href="https://www.sympla.com.br/produtor/ojohn" target="_blank" class="btn btn-red" style="width: 100%;">Faça sua inscrição!</a>
+          </div>
+        </div>
+
+        <!-- Essencial -->
+        <div class="price-card">
+          <div>
+            <span class="card-header-tag">Assinatura Mensal</span>
+            <h3 class="plan-title">Essencial</h3>
+            <div class="price-tag">R$ 198 <span>/mês</span></div>
+            <p class="plan-desc">Experimente e mantenha-se atualizado!</p>
+            <ul class="feature-list">
+              <li>Atualização constante com baixo investimento</li>
+              <li>01 Consulta individual mensal (Sessão de 1h)</li>
+              <li>Acesso completo à plataforma online e materiais</li>
+              <li>01 Sessão mensal em grupo ao vivo</li>
+            </ul>
+          </div>
+          <div>
+            <div class="promo-alert">PROMOÇÃO: 10% de desconto para ex-alunos</div>
+            <a href="#contato" class="btn btn-red" style="width: 100%;">Assine Já</a>
+          </div>
+        </div>
+
+        <!-- Pró.Business -->
+        <div class="price-card featured">
+          <div>
+            <span class="card-header-tag" style="color: var(--color-red);">Sua Melhor Opção</span>
+            <h3 class="plan-title">Pró.Business</h3>
+            <div class="price-tag">R$ 328 <span>/mês</span></div>
+            <p class="plan-desc">O melhor custo-benefício para acompanhamento!</p>
+            <ul class="feature-list">
+              <li>Tudo incluso do plano Essencial</li>
+              <li>Ponte entre aprendizado em grupo e mentoria</li>
+              <li>01 Consulta individual mensal (Sessão de 1h)</li>
+              <li><strong>+ 04 horas de mentoria individual por mês</strong></li>
+            </ul>
+          </div>
+          <div>
+            <div class="promo-alert">PROMOÇÃO: 10% de desconto para ex-alunos</div>
+            <a href="#contato" class="btn btn-red" style="width: 100%;">Assine Já</a>
+          </div>
+        </div>
+
+        <!-- Mentor.IA -->
+        <div class="price-card">
+          <div>
+            <span class="card-header-tag">Serviço Sob Consulta</span>
+            <h3 class="plan-title">Mentor.IA</h3>
+            <div class="price-tag">Consulte</div>
+            <p class="plan-desc">Mentoria na medida certa para líderes e empresas!</p>
+            <ul class="feature-list">
+              <li>Pacotes a partir de 10h mensais de acompanhamento</li>
+              <li>Diagnóstico inicial + Plano personalizado</li>
+              <li>Revisão completa dos fluxos do seu negócio</li>
+              <li>Atendimento e suporte prioritário</li>
+            </ul>
+          </div>
+          <div>
+            <div class="promo-alert">PROMOÇÃO: 10% de desconto para ex-alunos</div>
+            <a href="#contato" class="btn btn-red" style="width: 100%;">Contrate Agora</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COMBO BANNER -->
+      <div class="combo-card">
+        <div>
+          <span class="tag-badge" style="background-color: var(--color-white); color: var(--color-black);">Combinação Perfeita</span>
+          <h3 class="combo-title">Combo AI.First</h3>
+          <p class="combo-subtitle">Acelere seu aprendizado: 01 Curso Presencial IA.Playground + 01 Mês de Assinatura Pró.Business.</p>
+        </div>
+        <div style="text-align: right;">
+          <div class="combo-price">R$ 528,00</div>
+          <div style="background-color: #222; color: #FFF; font-weight: 700; padding: 4px 10px; border-radius: 4px; font-size: 0.88rem;">ECONOMIA DE R$ 128,00</div>
+          <a href="#contato" class="btn btn-red" style="margin-top: 16px;">Compre Agora!</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. AGENDA -->
+  <section id="agenda" class="agenda-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Agenda de Treinamentos</h2>
+        <p class="section-subtitle">Confira as próximas turmas presenciais dos cursos IA.Playground e Google NotebookLM.</p>
+      </div>
+
+      <table class="agenda-table">
+        <thead>
+          <tr>
+            <th>Curso / Evento</th>
+            <th>Localização</th>
+            <th>Data</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IA.Playground & Google NotebookLM</td>
+            <td>São Paulo - SP</td>
+            <td>21/07</td>
+            <td><span class="status-badge status-open">Inscrições Abertas</span></td>
+          </tr>
+          <tr>
+            <td>IA.Playground & Google NotebookLM</td>
+            <td>Blumenau - SC</td>
+            <td>24/07</td>
+            <td><span class="status-badge status-prep">Em Preparação</span></td>
+          </tr>
+          <tr>
+            <td>IA.Playground - Turma In Company</td>
+            <td>São Paulo - SP</td>
+            <td>23/06</td>
+            <td><span class="status-badge status-done">Realizado</span></td>
+          </tr>
+          <tr>
+            <td>IA.Playground Presencial</td>
+            <td>São Paulo - SP</td>
+            <td>18/06</td>
+            <td><span class="status-badge status-done">Realizado</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 8. IA CORPORATIVA -->
+  <section id="corporativo" class="b2b-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Pocket / Practical Courses</span>
+        <h2 class="section-title">IA Corporativa & Soluções B2B</h2>
+        <p class="section-subtitle">Capacitação que inspira: programas em 3 formatos sob medida para empresas, condomínios, clubes e associações (in Community | in Company).</p>
+      </div>
+
+      <div class="b2b-grid">
+        <div class="b2b-card">
+          <div>
+            <div class="num-indicator">01.</div>
+            <h3>Pocket Courses — Conceitos Básicos</h3>
+            <p>Perfeito para pequenos empreendedores e profissionais liberais! Explore temas relevantes de inovação, troque experiências e fortaleça seu networking.</p>
+            <ul class="b2b-list">
+              <li><strong>Carga Horária:</strong> 2h por cada tema</li>
+              <li><strong>Temas:</strong> Inteligência Artificial (IA) & ESG</li>
+              <li><strong>Modelos:</strong> in Community | in Company</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="b2b-card">
+          <div>
+            <div class="num-indicator">02.</div>
+            <h3>Practical Course — Hands on</h3>
+            <p>Prepare-se para a ação! Mentoria presencial desenhada para aprofundar seu aprendizado em três momentos chave:</p>
+            <ul class="b2b-list">
+              <li><strong>Fazendo Juntos:</strong> Aplicação de conceitos em exercícios práticos.</li>
+              <li><strong>Mentoria Específica:</strong> Sessão dedicada ao seu negócio.</li>
+              <li><strong>Primeiros Passos:</strong> Construção do seu Business Case inicial.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="b2b-card">
+          <div>
+            <div class="num-indicator">03.</div>
+            <h3>Pocket Course — Sensibilização</h3>
+            <p>Cursos corporativos presenciais focados na sensibilização e aculturamento digital de equipes humanas, tanto executivas quanto operacionais.</p>
+            <ul class="b2b-list">
+              <li><strong>Público:</strong> Executivos, lideranças e equipes operacionais</li>
+              <li><strong>Objetivo:</strong> Alinhamento cultural e eliminação do receio tecnológico</li>
+              <li><strong>Formato:</strong> Presencial na empresa ou entidade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FORMULÁRIO DE CONTATO -->
+  <section id="contato" class="contact-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <h2 class="section-title">Fale Conosco & Agende seu Diagnóstico</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Preencha o formulário abaixo para tirar dúvidas sobre assinaturas ou solicitar um diagnóstico corporativo para sua empresa.</p>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <div class="form-type-selector">
+          <button type="button" class="type-btn active" id="btnPerson">Para Você (PF)</button>
+          <button type="button" class="type-btn" id="btnBusiness">Para sua Empresa (B2B)</button>
+        </div>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="formName">Nome Completo *</label>
+            <input type="text" id="formName" class="form-control" placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formEmail">E-mail *</label>
+              <input type="email" id="formEmail" class="form-control" placeholder="seuemail@dominio.com" required>
+            </div>
+            <div class="form-group">
+              <label for="formPhone">Telefone / WhatsApp *</label>
+              <input type="tel" id="formPhone" class="form-control" placeholder="(11) 99999-9999" required>
+            </div>
+          </div>
+
+          <div id="b2bFields" style="display: none;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formCompany">Nome da Empresa / Entidade</label>
+                <input type="text" id="formCompany" class="form-control" placeholder="Sua empresa">
+              </div>
+              <div class="form-group">
+                <label for="formEmployees">Número de Colaboradores</label>
+                <select id="formEmployees" class="form-control">
+                  <option value="">Selecione o porte</option>
+                  <option value="1-10">1 a 10 colaboradores</option>
+                  <option value="11-50">11 a 50 colaboradores</option>
+                  <option value="51-200">51 a 200 colaboradores</option>
+                  <option value="200+">Acima de 200 colaboradores</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formInterest">Assunto de Interesse *</label>
+            <select id="formInterest" class="form-control" required>
+              <option value="">Selecione uma opção</option>
+              <option value="IA.Playground">Inscrição no Curso IA.Playground (R$ 328)</option>
+              <option value="Assinatura Essencial">Assinatura Essencial (R$ 198/mês)</option>
+              <option value="Assinatura Pro.Business">Assinatura Pró.Business (R$ 328/mês)</option>
+              <option value="Combo AI.First">Combo AI.First (R$ 528)</option>
+              <option value="NR1-Manager">Solução NR1-Manager</option>
+              <option value="Grupos Fechados">Curso para Entidades / Grupos Fechados</option>
+              <option value="01. Pocket Courses">01. Pocket Courses - Conceitos Básicos</option>
+              <option value="02. Practical Course">02. Practical Course - Hands on</option>
+              <option value="03. Pocket Sensibilizacao">03. Pocket Course - Sensibilização</option>
+              <option value="Mentoria Estratégica">Mentoria Estratégica / Mentor.IA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage">Sua Mensagem / Necessidade</label>
+            <textarea id="formMessage" rows="4" class="form-control" placeholder="Como podemos ajudar no seu desenvolvimento ou da sua equipe?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-red" style="width: 100%;">Enviar Mensagem</button>
+
+          <div class="form-success-msg" id="successMessage">
+            ✓ Obrigado! Sua mensagem foi enviada com sucesso. Nossa equipe entrará em contato em breve.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. RODAPÉ (PRETO ABSOLUTO) COM SITEMAP E POLÍTICAS EXPANSÍVEIS -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="#" class="brand-logo-link">
+            <img src="Verm-Fundo Preto.jpeg" alt="ojohn" class="footer-logo-img">
+          </a>
+          <p class="footer-address" style="margin-top: 12px;">
+            Especialista em treinamento e mentoria em Inteligência Artificial e Transformação Digital.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contato e Atendimento</h4>
+          <p class="footer-email" style="margin-bottom: 12px;">
+            E-mail: <a href="mailto:marketing@ojohn.com.br?subject=Tenho%20interesse%20nos%20servi%C3%A7os%20da%20ojohn.">marketing@ojohn.com.br</a>
+          </p>
+          <p class="footer-address">
+            Rua Verbo Divino, Nº 2001 - 3º andar - sala 305 - bloco B<br>
+            Chácara Santo Antônio - São Paulo - SP - CEP 04719-002
+          </p>
+        </div>
+      </div>
+
+      <!-- BOTÕES DE EXPANSÃO (ACCORDION) -->
+      <div class="footer-expand-controls">
+        <button type="button" class="footer-expand-btn" id="btnToggleSitemap">
+          <span>Mapa do Site (Sitemap)</span>
+          <span class="icon-arrow">▼</span>
+        </button>
+        <button type="button" class="footer-expand-btn" id="btnTogglePrivacy">
+          <span>Política de Privacidade & LGPD</span>
+          <span class="icon-arrow">▼</span>
+        </button>
+      </div>
+
+      <!-- PAINEL EXPANSÍVEL: MAPA DO SITE -->
+      <div class="footer-collapsible-content" id="panelSitemap">
+        <div class="sitemap-grid-footer">
+          <div>
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="#sobre">Sobre a ojohn</a></li>
+              <li><a href="#equipe-digital">Equipe Digital (Iago, Bia, Lia)</a></li>
+              <li><a href="#novidades">Novidades & NR1-Manager</a></li>
+              <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Cursos & Planos</h4>
+            <ul>
+              <li><a href="#jornada">IA.Playground (R$ 328)</a></li>
+              <li><a href="#jornada">Assinatura Essencial (R$ 198/mês)</a></li>
+              <li><a href="#jornada">Assinatura Pró.Business (R$ 328/mês)</a></li>
+              <li><a href="#jornada">Mentor.IA (Sob Consulta)</a></li>
+              <li><a href="#jornada">Combo AI.First (R$ 528)</a></li>
+              <li><a href="#novidades">Grupos Fechados para Entidades</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Soluções Corporativas</h4>
+            <ul>
+              <li><a href="#corporativo">Pocket Courses (Conceitos Básicos)</a></li>
+              <li><a href="#corporativo">Practical Course (Hands on)</a></li>
+              <li><a href="#corporativo">Pocket Course (Sensibilização)</a></li>
+              <li><a href="#novidades">Plataforma NR1-Manager</a></li>
+              <li><a href="#corporativo">Super Apps NoCode</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Agenda & Eventos</h4>
+            <ul>
+              <li><a href="#agenda">Turma São Paulo - SP (21/07)</a></li>
+              <li><a href="#agenda">Turma Blumenau - SC (24/07)</a></li>
+              <li><a href="#agenda">Turmas In Company</a></li>
+              <li><a href="https://www.sympla.com.br/produtor/ojohn" target="_blank">Inscrições no Sympla</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAINEL EXPANSÍVEL: POLÍTICA DE PRIVACIDADE E LGPD -->
+      <div class="footer-collapsible-content" id="panelPrivacy">
+        <div class="lgpd-footer-box">
+          <h3>Política de Privacidade & Conformidade com a LGPD</h3>
+          <p>
+            A <strong>ojohn</strong> compromete-se rigorosamente com a segurança e a proteção dos dados pessoais de todos os seus alunos, clientes e parceiros, em integral conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018)</strong>.
+          </p>
+          <p style="margin-top: 10px;">
+            Coletamos apenas as informações estritamente necessárias para a prestação de nossos serviços de treinamento, mentoria e contato corporativo (como nome, e-mail, telefone e empresa). Não compartilhamos ou comercializamos dados com terceiros. A qualquer momento, você pode solicitar a confirmação, o acesso ou a exclusão dos seus dados cadastrais através do e-mail <strong>marketing@ojohn.com.br</strong>. Nossas soluções de inteligência artificial, como a plataforma <strong>NR1-Manager</strong>, são projetadas sob o princípio do <em>Privacy by Design</em>, garantindo ambiente seguro e confidencialidade total.
+          </p>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT & AVISO LEGAL -->
+      <div class="footer-bottom">
+        <p>&copy; Copyright 2026 ojohn - All Rights Reserved.</p>
+        <p style="margin-top: 12px;">
+          "Todas as marcas citadas neste site pertencem aos seus respectivos proprietários. O uso de nomes comerciais, marcas e logotipos serve exclusivamente para fins de identificação e referência editorial, não implicando qualquer relação de endosso, associação ou afiliação."
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Menu Hambúrguer Mobile
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', function() {
+          navMenu.classList.toggle('active');
+          mobileMenuToggle.classList.toggle('active');
+        });
+
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+          });
+        });
+      }
+
+      // Filtro da Equipe Digital
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const videoCards = document.querySelectorAll('.video-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          const target = this.getAttribute('data-target');
+
+          videoCards.forEach(card => {
+            if (target === 'all' || card.getAttribute('data-member') === target) {
+              card.style.display = 'flex';
+              card.style.opacity = '1';
+            } else {
+              card.style.display = 'none';
+              card.style.opacity = '0';
+            }
+          });
+        });
+      });
+
+      // Formulário Dinâmico B2B / PF
+      const btnPerson = document.getElementById('btnPerson');
+      const btnBusiness = document.getElementById('btnBusiness');
+      const b2bFields = document.getElementById('b2bFields');
+      const contactForm = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+
+      if (btnPerson && btnBusiness && b2bFields) {
+        btnPerson.addEventListener('click', function() {
+          btnPerson.classList.add('active');
+          btnBusiness.classList.remove('active');
+          b2bFields.style.display = 'none';
+        });
+
+        btnBusiness.addEventListener('click', function() {
+          btnBusiness.classList.add('active');
+          btnPerson.classList.remove('active');
+          b2bFields.style.display = 'block';
+        });
+      }
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (successMessage) {
+            successMessage.style.display = 'block';
+            contactForm.reset();
+            setTimeout(() => {
+              successMessage.style.display = 'none';
+            }, 6000);
+          }
+        });
+      }
+
+      // EXPANSÃO / CONTROLE DE ACCORDION NO RODAPÉ
+      const btnToggleSitemap = document.getElementById('btnToggleSitemap');
+      const btnTogglePrivacy = document.getElementById('btnTogglePrivacy');
+      const panelSitemap = document.getElementById('panelSitemap');
+      const panelPrivacy = document.getElementById('panelPrivacy');
+
+      if (btnToggleSitemap && panelSitemap) {
+        btnToggleSitemap.addEventListener('click', function() {
+          const isOpen = panelSitemap.classList.contains('open');
+
+          // Se o painel de privacidade estiver aberto, fecha ele
+          if (panelPrivacy && panelPrivacy.classList.contains('open')) {
+            panelPrivacy.classList.remove('open');
+            btnTogglePrivacy.classList.remove('active');
+          }
+
+          if (isOpen) {
+            panelSitemap.classList.remove('open');
+            btnToggleSitemap.classList.remove('active');
+          } else {
+            panelSitemap.classList.add('open');
+            btnToggleSitemap.classList.add('active');
+          }
+        });
+      }
+
+      if (btnTogglePrivacy && panelPrivacy) {
+        btnTogglePrivacy.addEventListener('click', function() {
+          const isOpen = panelPrivacy.classList.contains('open');
+
+          // Se o painel do sitemap estiver aberto, fecha ele
+          if (panelSitemap && panelSitemap.classList.contains('open')) {
+            panelSitemap.classList.remove('open');
+            btnToggleSitemap.classList.remove('active');
+          }
+
+          if (isOpen) {
+            panelPrivacy.classList.remove('open');
+            btnTogglePrivacy.classList.remove('active');
+          } else {
+            panelPrivacy.classList.add('open');
+            btnTogglePrivacy.classList.add('active');
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
